@@ -1,0 +1,47 @@
+ILPA Model Limited Partnership Agreement
+=========================================
+Source: https://ilpa.org/industry-guidance/templates-standards-model-documents/model-limited-partnership-agreement/
+Fetched: 2026-03-28
+
+OVERVIEW
+--------
+The Institutional Limited Partners Association created standardized Model Limited Partnership
+Agreements (LPAs) to address persistent needs in private equity. These documents aim to reduce
+negotiation complexity, lower legal costs, and provide fair terms for both General Partners (GPs)
+and Limited Partners (LPs).
+
+"A standard Model Limited Partnership Agreement ('LPA') has been a persistent need in the private
+equity asset class given the cost, time and complexity of negotiating the terms of investment."
+
+The models help GPs achieve fundraising certainty and lower formation costs while enabling LPs to
+understand rights and obligations with reduced legal expenses.
+
+DOCUMENT VERSIONS
+-----------------
+ILPA released two comprehensive, Delaware law-based model LPAs:
+
+1. Whole of Fund Model - Originally released October 2019; revised July 2020
+2. Deal by Deal Model - Released July 2020
+
+Both accommodate traditional private equity buyout fund structures with different distribution
+waterfall arrangements.
+
+DEVELOPMENT HISTORY
+-------------------
+The Model LPA project began in early 2018, involving approximately 20 attorneys representing
+both GPs and LPs globally. Development included extensive drafting and negotiation processes.
+
+AVAILABLE DOWNLOADS
+-------------------
+Six document formats are available:
+- Deal-by-Deal Model (Word and PDF)
+- Whole of Fund Model (Word and PDF)
+- Overview documents for both models (Word)
+
+Key PDF links:
+- Whole of Fund: https://ilpa.org/wp-content/uploads/2020/07/ILPA-Model-Limited-Partnership-Agreement-WOF.pdf
+- Deal by Deal: https://ilpa.org/wp-content/uploads/2020/07/ILPA-Model-Limited-Partnership-Agreement-DBD.pdf
+
+CONTACT
+-------
+Comments can be directed to: industryaffairs@ilpa.org

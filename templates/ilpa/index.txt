@@ -1,0 +1,30 @@
+ILPA Templates, Standards & Model Documents
+============================================
+Source: https://ilpa.org/industry-guidance/templates-standards-model-documents/
+Fetched: 2026-03-28
+
+1. ILPA Templates Hub
+   Description: Central repository for all ILPA templates including the Reporting Template,
+   Performance Template, Capital Call & Distribution Template, and Portfolio Company Metrics
+   Template with associated materials.
+   Link: https://ilpa.org/industry-guidance/templates-standards-model-documents/ilpa-templates-hub/
+
+2. Due Diligence Questionnaire and Diversity Metrics Template
+   Description: Intended to standardize the key areas of inquiry posed by investors during their
+   diligence of managers and to provide a framework for ongoing monitoring of progress related to DEI.
+   Link: https://ilpa.org/industry-guidance/templates-standards-model-documents/due-diligence-questionnaire-and-diversity-metrics-template/
+
+3. Model Limited Partnership Agreement
+   Description: A standard Model Limited Partnership Agreement has been a persistent need in the
+   private equity asset class given the cost, time and complexity of negotiating the terms of investment.
+   Link: https://ilpa.org/industry-guidance/templates-standards-model-documents/model-limited-partnership-agreement/
+
+4. Model Non-Disclosure Agreement
+   Description: Provides a standard document for agreements between limited partners (LPs) and
+   general partners (GPs), benefiting both parties by helping to reduce legal costs and to save time.
+   Link: https://ilpa.org/industry-guidance/templates-standards-model-documents/model-non-disclosure-agreement/
+
+5. Model Subscription Agreement
+   Description: Released in December 2017 to streamline fundraising, increase clarity and improve
+   the efficiency of capital formation for private equity funds.
+   Link: https://ilpa.org/industry-guidance/templates-standards-model-documents/model-subscription-agreement/
