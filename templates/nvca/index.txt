@@ -1,0 +1,85 @@
+NVCA Model Legal Documents - Full Index
+Retrieved: 2026-03-28
+Source: https://nvca.org/model-legal-documents/
+
+=== FINANCING DOCUMENTS ===
+
+1. Certificate of Incorporation (Updated October 2025)
+   https://nvca.org/document/nvca-model-certificate-of-incorporation-updated-oct-2025/
+
+2. Stock Purchase Agreement (Updated October 2025)
+   https://nvca.org/document/nvca-model-stock-purchase-agreement-updated-oct-2025/
+
+3. Investors' Rights Agreement (Updated October 2025)
+   https://nvca.org/document/nvca-model-investors-rights-agreement-updated-oct-2025/
+
+4. Voting Agreement (Updated October 2025)
+   https://nvca.org/document/nvca-model-voting-agreement-updated-oct-2025/
+
+5. Right of First Refusal and Co-Sale Agreement (Updated October 2025)
+   https://nvca.org/document/nvca-model-right-of-first-refusal-and-co-sale-agreement-updated-oct-2025/
+
+6. Management Rights Letter (Updated July 2020)
+   https://nvca.org/document/nvca-2020-management-rights-letter-2/
+
+7. Indemnification Agreement (Updated July 2020)
+   https://nvca.org/document/nvca-2020-indemnification-agreement-2/
+
+8. Model Legal Opinion
+   https://nvca.org/document/model-legal-opinion/
+
+=== OTHER DOCUMENTS ===
+
+9. LPA Insert Language Regarding CFIUS (Updated July 2020)
+   https://nvca.org/document/nvca-2020-lpa-insert-re-cfius-2/
+
+10. Life-Science Confidential Disclosure Agreement (Updated July 2025)
+    https://nvca.org/document/life-science-confidential-disclosure-agreement/
+
+11. Questionnaire for Directors and Executive Officers
+    https://nvca.org/recommends/questionnaire-for-directors-and-executive-officers/
+
+12. Questionnaire for 5% Holders in Connection with Public Offering
+    https://nvca.org/recommends/questionnaire-for-5-holders-in-connection-with-public-offering/
+
+=== MODEL PIPE FINANCING DOCUMENTS (US ISSUER) ===
+
+13. Model PIPE Registration Rights Agreement (US Issuer)
+    https://nvca.org/document/model-pipe-registration-rights-agreement-us-issuer-2/
+
+14. Model PIPE Securities Purchase Agreement (US Issuer)
+    https://nvca.org/document/model-pipe-securities-purchase-agreement-us-issuer-2/
+
+15. Model PIPE Form of Pre-Funded Warrant (US Issuer)
+    https://nvca.org/document/model-pipe-form-of-pre-funded-warrant-us-issuer-2/
+
+16. Model PIPE Form of Common Warrant (US Issuer)
+    https://nvca.org/document/model-pipe-form-of-common-warrant-us-issuer-2/
+
+=== MODEL PIPE FINANCING DOCUMENTS (FPI) ===
+
+17. Model PIPE Registration Rights Agreement (FPI)
+    https://nvca.org/document/model-pipe-registration-rights-agreement-fpi/
+
+18. Model PIPE Securities Purchase Agreement (FPI)
+    https://nvca.org/document/model-pipe-securities-purchase-agreement-fpi/
+
+19. Model PIPE Form of Pre-Funded Warrant (FPI)
+    https://nvca.org/document/model-pipe-form-of-pre-funded-warrant-fpi/
+
+20. Model PIPE Form of Ordinary Warrant (FPI)
+    https://nvca.org/document/model-pipe-form-of-ordinary-warrant-fpi/
+
+=== UNIVERSITY BIOTECH LICENSING DOCUMENTS ===
+
+21. TTO and VC Early-Stage Life-Science Term Sheet (Updated December 2023)
+    https://nvca.org/document/us-bolt-life-science-sample-license-agreement-dec-2023-2/
+
+22. US-BOLT Life Science Sample License Agreement
+    https://nvca.org/recommends/us-bolt-life-science-sample-license-agreement-dec-2023-2/
+
+23. Model University Climate Tech Licensing Term Sheet (Updated April 2024)
+    https://nvca.org/recommends/us-bolt-term-sheet-climate-updated-april-2024/
+
+24. Model University Climate Tech Licensing Term Sheet .pdf (Updated April 2024)
+    https://nvca.org/recommends/us-bolt-term-sheetclimate-pdf-updated-april-2024/
