@@ -6,6 +6,15 @@ AI General Counsel specialising in private markets, fund formation, M&A, debt/cr
 - **Entry:** [`index.js`](./index.js)
 - **Coverage:** 56 legal document types across 26 jurisdictions, backed by 79 official templates from 32 institutional sources.
 
+## Three layers
+
+| Layer | Location |
+|---|---|
+| **Core** (this folder) | [`agents/gaio/`](.) — agent card, legal KB, jurisdictions, templates, DOCX export |
+| **Backend HTTP** | [`backend/src/agents/gaio/`](../../backend/src/agents/gaio) — `route.js`, engine, KB, deal memory |
+| **Frontend page** | [`frontend/tabularum-gaio.html`](../../frontend/tabularum-gaio.html) |
+| **Frontend JS** | [`frontend/js/pages/gaio.js`](../../frontend/js/pages/gaio.js) |
+
 ## Capabilities
 
 - **Advise** — jurisdiction-specific legal advice with risk analysis ([`gaio-engine.js`](./gaio-engine.js))
