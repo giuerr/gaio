@@ -19,7 +19,7 @@ const { generateDocx, DOCUMENT_STYLES } = require('./docx-export');
 const { compareJurisdictions, buildComparisonPrompt, getJurisdictionProfile } = require('./jurisdiction-compare');
 
 // ── INSTITUTIONAL-CORE: Confidence, Citations, Audit, Approval, Versioning ──
-const { createInstitutionalCore } = require('@tabularum/institutional-core');
+const { createInstitutionalCore } = require('./lib/institutional-core');
 
 const _institutionalCore = createInstitutionalCore({
   agentId:      'gaio',
