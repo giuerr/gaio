@@ -422,7 +422,8 @@ async function callGaio(messages, task = {}, options = {}) {
       headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
       signal: controller.signal,
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-5',
+        thinking: { type: 'disabled' },
         max_tokens: maxTokens,
         system: buildGaioSystemPrompt(task),
         messages
@@ -468,7 +469,7 @@ function institutionalWrap(rawResult, meta = {}) {
     action:          meta.mode || 'response',
     module:          'gaio',
     inputSummary:    meta.inputSummary || '',
-    model:           'claude-sonnet-4-20250514',
+    model:           'claude-sonnet-5',
     durationMs:      meta.durationMs,
     userId:          meta.userId,
     sources:         meta.sources || [],
@@ -571,7 +572,7 @@ async function draft({ docType, jurisdiction, parties = {}, terms = {}, instruct
 
     // Version the draft output for audit trail
     const artifactId = `${docType}-draft-${Object.values(parties)[0] || 'unnamed'}`.replace(/\s+/g, '-').toLowerCase();
-    _institutionalCore.versioning.save(artifactId, response, { action: 'draft', model: 'claude-sonnet-4-20250514', confidence: null, docType });
+    _institutionalCore.versioning.save(artifactId, response, { action: 'draft', model: 'claude-sonnet-5', confidence: null, docType });
 
     // DOCX export — if outputPath provided, also generate a Word document
     if (exportPath) {
