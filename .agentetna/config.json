@@ -1,0 +1,32 @@
+{
+  "id": "institutional-core",
+  "name": "institutional core",
+  "channels": [
+    "web"
+  ],
+  "mode": "simulator",
+  "env": {
+    "url": "INSTITUTIONAL_CORE_URL",
+    "password": "INSTITUTIONAL_CORE_PASSWORD"
+  },
+  "userId": "github:266114454",
+  "github": {
+    "repo": "giuerr/gaio",
+    "branch": "main",
+    "files": [
+      "lib/institutional-core/approval.js",
+      "lib/institutional-core/audit.js",
+      "lib/institutional-core/citations.js",
+      "lib/institutional-core/confidence.js",
+      "lib/institutional-core/data-isolation.js",
+      "lib/institutional-core/index.js",
+      "lib/institutional-core/package.json",
+      "lib/institutional-core/scope-guard.js",
+      "lib/institutional-core/versioning.js"
+    ],
+    "folder": "lib/institutional-core"
+  },
+  "role": "",
+  "color": "#D9D9D9",
+  "ownerName": "Owner"
+}
