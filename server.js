@@ -90,6 +90,26 @@ for (const capability of ['advise', 'citedAdvise', 'draft', 'review', 'negotiate
   }));
 }
 
+// ─── Test harness endpoint (Agent Etna) ─────────────────────────────────
+// Gaio's real surface is capability routes with structured bodies —
+// engine.chat wants { messages: [...] }, so a developmental simulator
+// posting the standard { message } -> { reply } shape got "messages array
+// required" on every route it tried (2026-08-06: an entire simulation run
+// died on HTTP 404/500 because of this shape mismatch). This adapter
+// exposes the brain over the plain shape, ONLY when ETNA_AGENT_CHAT=1 is
+// set (Agent Etna injects that in its sandbox); in normal production the
+// flag is unset and this 404s, so the public surface is unchanged.
+app.post('/api/chat', route(async (req, res) => {
+  if (process.env.ETNA_AGENT_CHAT !== '1') return res.status(404).json({ error: 'Not found' });
+  if (!hasLLMKey()) return res.status(503).json({ error: NO_KEY_MESSAGE });
+  const message = req.body && (req.body.message || req.body.text);
+  if (!message || typeof message !== 'string') return res.status(400).json({ error: 'message required' });
+  const result = await engine.chat({ messages: [{ role: 'user', content: message }] });
+  const reply = (result && (result.response || result.answer || result.message))
+    || (result && result.blocked ? (result.reason || 'Request declined by scope guard.') : '');
+  res.json({ reply: typeof reply === 'string' ? reply : JSON.stringify(reply) });
+}));
+
 const PORT = process.env.PORT || 3300;
 
 if (require.main === module) {
