@@ -8,6 +8,7 @@
 
 'use strict';
 
+const { createLLMClient, llmKey } = require('./llm-client');
 const { buildJurisdictionPrompt, getJurisdiction } = require('./jurisdictions');
 const { buildDocumentPrompt, getDocument, detectDocumentType } = require('./document-kb');
 const { buildDeepLegalContext, OFFSHORE_KNOWLEDGE } = require('./legal-kb');
@@ -410,35 +411,32 @@ const API_TIMEOUT_MS = 60_000;
 
 async function callGaio(messages, task = {}, options = {}) {
   const { maxTokens = 3000 } = options;
-  const apiKey = process.env.GAIO_API || process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) throw new Error('callGaio: no API key configured. Set GAIO_API or ANTHROPIC_API_KEY environment variable.');
+
+  // GAIO_API is Gaio's own override; otherwise whichever provider is
+  // configured — OpenRouter by preference, Anthropic direct as fallback.
+  const apiKey = process.env.GAIO_API || llmKey();
+  if (!apiKey) {
+    throw new Error('callGaio: no API key configured. Set OPENROUTER_API_KEY (or GAIO_API / ANTHROPIC_API_KEY).');
+  }
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), API_TIMEOUT_MS);
-  let res;
+  let data;
   try {
-    res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-      signal: controller.signal,
-      body: JSON.stringify({
-        model: 'claude-sonnet-5',
-        thinking: { type: 'disabled' },
-        max_tokens: maxTokens,
-        system: buildGaioSystemPrompt(task),
-        messages
-      })
-    });
+    data = await createLLMClient({ apiKey }).messages.create({
+      model: 'claude-sonnet-5',
+      thinking: { type: 'disabled' },
+      max_tokens: maxTokens,
+      system: buildGaioSystemPrompt(task),
+      messages
+    }, { signal: controller.signal });
+  } catch (err) {
+    throw new Error(`callGaio: AI API error${err.status ? ` ${err.status}` : ''}: ${String(err.message).substring(0, 200)}`);
   } finally {
     clearTimeout(timer);
   }
 
-  if (!res.ok) {
-    const err = await res.text().catch(() => res.statusText);
-    throw new Error(`callGaio: AI API error ${res.status}: ${err.substring(0, 200)}`);
-  }
-  const data = await res.json();
-  const text = data.content?.[0]?.text;
+  const text = data.content?.find(b => b.type === 'text')?.text;
   if (!text) throw new Error('callGaio: empty response from AI API.');
   return text;
 }

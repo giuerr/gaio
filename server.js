@@ -5,7 +5,8 @@
  * platform. Exposes the legal engine's core capabilities over HTTP.
  *
  *   PORT               listen port (default 3300)
- *   ANTHROPIC_API_KEY  required by the engine's AI-backed capabilities
+ *   OPENROUTER_API_KEY required by the engine's AI-backed capabilities
+ *   ANTHROPIC_API_KEY  fallback provider, used only when OpenRouter is absent
  *   ALLOWED_ORIGINS    comma-separated CORS whitelist (default: same-origin only)
  */
 
@@ -16,6 +17,7 @@ require('dotenv').config();
 const express = require('express');
 const cors    = require('cors');
 
+const { hasLLMKey, NO_KEY_MESSAGE } = require('./llm-client');
 const gaio   = require('./index');
 const engine = require('./gaio-engine');
 
@@ -43,7 +45,7 @@ app.get('/health', (_req, res) => {
     ok: true,
     agent: 'gaio',
     version: AGENT_CARD.version,
-    ai: !!process.env.ANTHROPIC_API_KEY,
+    ai: hasLLMKey(),
   });
 });
 
@@ -80,8 +82,8 @@ app.get('/templates', (_req, res) => {
 
 for (const capability of ['advise', 'citedAdvise', 'draft', 'review', 'negotiate', 'validate', 'compare', 'chat', 'dealBrief']) {
   app.post(`/${capability}`, route(async (req, res) => {
-    if (!process.env.ANTHROPIC_API_KEY) {
-      return res.status(503).json({ error: 'AI unavailable — set ANTHROPIC_API_KEY.' });
+    if (!hasLLMKey()) {
+      return res.status(503).json({ error: NO_KEY_MESSAGE });
     }
     const result = await engine[capability](req.body || {});
     res.json({ ok: true, result });
@@ -93,8 +95,8 @@ const PORT = process.env.PORT || 3300;
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`Gaio — General Counsel v${AGENT_CARD.version} listening on ${PORT}`);
-    if (!process.env.ANTHROPIC_API_KEY) {
-      console.warn('ANTHROPIC_API_KEY not set — AI capabilities are disabled.');
+    if (!hasLLMKey()) {
+      console.warn('No LLM key set — AI capabilities are disabled. Set OPENROUTER_API_KEY.');
     }
   });
 }
