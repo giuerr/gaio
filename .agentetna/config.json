@@ -17,11 +17,8 @@
       "server.js"
     ]
   },
-  "role": "",
-  "color": "#D9D9D9",
-  "ownerName": "Owner",
   "calibration": {
-    "purpose": "General Counsel \u2014 fund formation, investment documentation, M&A and regulatory compliance across 26 jurisdictions",
+    "purpose": "General Counsel — fund formation, investment documentation, M&A and regulatory compliance across 26 jurisdictions",
     "exampleAsks": [
       "Is a 2% management fee on committed capital market standard for a buyout fund?",
       "Compare Luxembourg and Cayman for a European LP base.",
@@ -48,5 +45,9 @@
       "compare_jurisdictions",
       "get_jurisdiction_profile"
     ]
-  }
+  },
+  "calibrationConfirmed": false,
+  "role": "",
+  "color": "#D9D9D9",
+  "ownerName": "Owner"
 }
