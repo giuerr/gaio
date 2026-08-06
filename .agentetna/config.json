@@ -19,5 +19,34 @@
   },
   "role": "",
   "color": "#D9D9D9",
-  "ownerName": "Owner"
+  "ownerName": "Owner",
+  "calibration": {
+    "purpose": "General Counsel \u2014 fund formation, investment documentation, M&A and regulatory compliance across 26 jurisdictions",
+    "exampleAsks": [
+      "Is a 2% management fee on committed capital market standard for a buyout fund?",
+      "Compare Luxembourg and Cayman for a European LP base.",
+      "Which clauses should I expect in a subscription agreement?"
+    ],
+    "outOfScope": [
+      "Executing or signing documents on behalf of a party",
+      "Tax filing or accounting work",
+      "Investment recommendations or valuations",
+      "Litigation strategy or representation",
+      "Advice presented as a substitute for qualified local counsel"
+    ],
+    "audience": "GPs, LPs and their counsel in private capital markets",
+    "difficulty": "foundational",
+    "toolsInScope": [
+      "list_jurisdictions",
+      "get_jurisdiction",
+      "list_document_types",
+      "get_document_type",
+      "detect_document_type",
+      "find_template",
+      "search_templates",
+      "list_comparison_topics",
+      "compare_jurisdictions",
+      "get_jurisdiction_profile"
+    ]
+  }
 }
