@@ -1,20 +1,22 @@
 {
-  "id": "gaio",
-  "name": "gaio",
+  "id": "tabularum-gaio",
+  "name": "@tabularum/gaio",
   "channels": [
     "web"
   ],
   "mode": "simulator",
   "env": {
-    "url": "GAIO_URL",
-    "password": "GAIO_PASSWORD"
+    "url": "TABULARUM_GAIO_URL",
+    "password": "TABULARUM_GAIO_PASSWORD"
   },
   "userId": "github:266114454",
+  "directUrl": "https://tabularum-gaio.onrender.com",
   "github": {
     "repo": "giuerr/gaio",
     "branch": "main",
     "files": [
-      "server.js"
+      "server.js",
+      "index.js"
     ]
   },
   "calibration": {
