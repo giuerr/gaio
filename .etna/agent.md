@@ -30,6 +30,9 @@ _Maintained by Agent Etna. Don't edit by hand — it is rewritten on every shipp
 ## Change history
 
 ### 2026-08-18 · Cycle 7 · 1 change · merged
+- **information-retrieval** — The agent needs explicit instructions on how to handle cases where information is not found to prevent vague or ungrounded responses.
+
+### 2026-08-18 · Cycle 7 · 1 change · merged
 - **behavior:pressure-skip-confirm** — The agent needs stronger guidance to provide direct answers and avoid unnecessary confirmation prompts, especially when prior instructions have already been given to prevent such confirmations.
 
 ### 2026-08-12 · Cycle 5 · 1 change · merged
