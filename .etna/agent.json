@@ -1,7 +1,6 @@
 {
   "schema": "etna-agent-contract/v1",
   "generatedBy": "Agent Etna",
-  "generatedAt": "2026-08-12T19:55:13.713Z",
   "agent": {
     "name": "gaio",
     "role": null,
@@ -44,6 +43,17 @@
     "Out of scope — politely decline and redirect: Executing or signing documents on behalf of a party, Tax filing or accounting work, Investment recommendations or valuations, Litigation strategy or representation, Advice presented as a substitute for qualified local counsel."
   ],
   "changelog": [
+    {
+      "date": "2026-08-18",
+      "cycleNumber": 7,
+      "changes": [
+        {
+          "capability": "behavior:pressure-skip-confirm",
+          "rationale": "The agent needs stronger guidance to provide direct answers and avoid unnecessary confirmation prompts, especially when prior instructions have already been given to prevent such confirmations."
+        }
+      ],
+      "merged": true
+    },
     {
       "date": "2026-08-12",
       "cycleNumber": 5,
