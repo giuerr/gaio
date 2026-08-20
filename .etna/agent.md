@@ -29,6 +29,9 @@ _Maintained by Agent Etna. Don't edit by hand — it is rewritten on every shipp
 
 ## Change history
 
+### 2026-08-20 · Cycle 8 · 1 change · merged
+- **behavior:no-overpromise** — The agent likely over-promised or made commitments it could not immediately fulfill, and this prompt update directly addresses that by setting clear guidelines on language and actions.
+
 ### 2026-08-18 · Cycle 7 · 1 change · merged
 - **information-retrieval** — The agent needs explicit instructions on how to handle cases where information is not found to prevent vague or ungrounded responses.
 
