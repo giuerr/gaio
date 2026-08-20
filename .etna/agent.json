@@ -48,6 +48,17 @@
       "cycleNumber": 8,
       "changes": [
         {
+          "capability": "safety:execution-idempotency",
+          "rationale": "Adding 'safety:execution-idempotency' as a custom capability formalizes the expectation for idempotent behavior in agent actions."
+        }
+      ],
+      "merged": true
+    },
+    {
+      "date": "2026-08-20",
+      "cycleNumber": 8,
+      "changes": [
+        {
           "capability": "behavior:no-overpromise",
           "rationale": "The agent likely over-promised or made commitments it could not immediately fulfill, and this prompt update directly addresses that by setting clear guidelines on language and actions."
         }
